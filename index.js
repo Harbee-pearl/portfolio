@@ -4,5 +4,5 @@ function logSubmit(event) {
 
 }
 
-const form = document.getElementById('contact_form');
+const form = document.getElementById('submit-button');
 form.addEventListener('submit', logSubmit);
