@@ -59,11 +59,11 @@ input {
     font-family: inherit;
     padding: 5px 10px;
     margin: 5px;
-    border: 2px solid var(--my-blue);
+    border: 1px solid var(--my-blue);
     border-radius: 5px;
 }
 textarea {
-    border: 2px solid var(--my-blue);
+    border: 1px solid var(--my-blue);
     border-radius: 5px;
     padding: 3px;
     min-height: 70px;
@@ -178,6 +178,7 @@ nav  ul {
 #contact_msg {
     max-width: 100vw;
     margin: auto;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -190,11 +191,11 @@ form {
 }
 #input-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(25vw, 2fr));
+    grid-template-columns: repeat(2, minmax(25vw, 1fr));
     grid-column: span 2;
 }
 #input-container input {
-    width: 90%;
+    width: 24vw;
     margin: auto;
 }
 #message {
@@ -206,7 +207,7 @@ form {
     justify-self: center;
     align-self: center;
 
-    padding: 10px 5px;
+    padding: 10px 10px;
     font-size: inherit;
     font-family: inherit;
     border: 0;
