@@ -13,7 +13,7 @@
 
 
 	<link rel="stylesheet" href="index.css" />
-	<script src="index.js"></script>
+	<script defer src="index.js"></script>
 
 	<title>Ruqayat Ajibade </title>
 </head>
@@ -108,8 +108,10 @@
 		<p id="contact_msg">Let me know how I can be of service or if you have any suggestions..</p>
 
 		<form id="contact_form" action="">
-			<input id="name" type="text" placeholder="Full  Name">
-			<input id="email" type="text" placeholder="Email">
+			<div id="input-container">
+				<input id="name" type="text" placeholder="Full  Name">
+				<input id="email" type="text" placeholder="Email">
+			</div>
 			<textarea id="message" placeholder="Enter your message here..."></textarea>
 			<button id="submit-button" type="submit">Send</button>
 		</form>

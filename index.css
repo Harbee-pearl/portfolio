@@ -47,6 +47,7 @@
 
 .section-style {
     width: 100%;
+    min-height: 90vh;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -142,7 +143,7 @@ nav  ul {
 
  .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(30vw, 1fr));
     margin: auto;
     align-items: stretch; 
     grid-gap: 10px;
@@ -183,13 +184,14 @@ nav  ul {
 
 form {
     display: grid;
-    min-width: 20vw;
     max-width: 50vw;
     width: fit-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(30vw, 1fr));
     gap: 10px;
 }
-
+#input-container {
+    grid-column: span 2;
+}
 #message {
     grid-column: span 2;
 }
