@@ -47,7 +47,6 @@
 
 .section-style {
     width: 100%;
-    min-height: 90vh;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -186,11 +185,17 @@ form {
     display: grid;
     max-width: 50vw;
     width: fit-content;
-    grid-template-columns: repeat(2, minmax(30vw, 1fr));
+    grid-template-columns: repeat(2, minmax(25vw, 1fr));
     gap: 10px;
 }
 #input-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25vw, 2fr));
     grid-column: span 2;
+}
+#input-container input {
+    width: 90%;
+    margin: auto;
 }
 #message {
     grid-column: span 2;

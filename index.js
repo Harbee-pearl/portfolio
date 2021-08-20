@@ -1,8 +1,8 @@
 
+
+const btn = document.getElementById('submit-button');
+btn.addEventListener('click', logSubmit);
+
 function logSubmit(event) {
     event.preventDefault();
-
 }
-
-const form = document.getElementById('submit-button');
-form.addEventListener('submit', logSubmit);
